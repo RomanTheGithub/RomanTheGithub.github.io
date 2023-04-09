@@ -1,0 +1,18 @@
+#navigation {
+    display:table;
+    table-layout:fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    box-shadow:0 0 3px rgba(0,0,0,.25);
+    background-color:#9251d8;
+    width:100%;
+    height:50px;
+    display:table-row;
+  }
+  
