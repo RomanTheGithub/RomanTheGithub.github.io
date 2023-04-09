@@ -29,19 +29,13 @@
             </center>
         </main>
 
-        <!--- Form Scripts -->
         <script>
-            //document.getElementById("usernameForm").reset();
-            var form = document.getElementById("usernameForm");
-            form.onsubmit = function(){robloxRedirect};
+            var a = location.href; 
+            var b = a.substring(a.indexOf("?")+1);
 
-            function robloxRedirect() {
-                alert("The form was submitted");
-                var formData = new FormData(form);
-                var username = formData.get('robloxusername');
-                var link = `https://www.roblox.com/users/profile?username=${username}`;
-                document.location.href(link);
-            }
+            var username = b.split("=").pop()
+            var link = `https://www.roblox.com/users/profile?username=${username}`;
+            window.location.href = link;
         </script>
     </body>
 </html>
